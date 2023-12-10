@@ -88,7 +88,7 @@ def main():
         sns.pairplot(data=data, x_vars='saldo', y_vars='pembelian',
              height=6, aspect=1.5).map(sns.kdeplot, levels=1, color='red')
         plt.title("Hubungan antara saldo dan pembelian", fontweight='bold', fontsize=15)
-        st.pyplot(plt.gcf()) 
+        st.pyplot(plt) 
         with st.expander("Lihat Penjelasan"):
             st.write("""
                      Berdasarkan plot yang ditampilkan dapat disimpulkan bahwa mayoritas pengguna melakukan pembelian di bawah angka 10.000.

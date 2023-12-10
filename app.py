@@ -88,6 +88,10 @@ def main():
         sns.pairplot(data=data, x_vars='saldo', y_vars='pembelian',
              height=6, aspect=1.5).map(sns.kdeplot, levels=1, color='red')
         plt.title("Hubungan antara saldo dan pembelian", fontweight='bold', fontsize=15)
+        st.write("""
+                     Refresh sekalilagi jika plot tidak muncul
+           
+                    """)
         st.pyplot(plt) 
         with st.expander("Lihat Penjelasan"):
             st.write("""
